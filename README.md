@@ -9,7 +9,7 @@ Este repositório oferece uma atividade para consolidação de conceitos de Orie
 1. Instale o Ruby na versão 2.0 ou superior
 2. Faça um fork do projeto
 3. Faça um clone do seu fork em sua máquina
-4. Na pasta raiz do projeto execute `bin\setup`
+4. Na pasta raiz do projeto execute `bin/setup`
 
 ## Funcionamento
 
