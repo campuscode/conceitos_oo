@@ -9,7 +9,7 @@ describe Cliente do
     cliente = Cliente.new(nome: nome, sobrenome: sobrenome, cpf: cpf)
     expect(cliente.nome).to eq nome
     expect(cliente.sobrenome).to eq sobrenome
-    expect(cliente.cfp).to eq cpf
+    expect(cliente.cpf).to eq cpf
   end
 
   it "deveria ser possivel obter nome completo" do
