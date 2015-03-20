@@ -2,6 +2,7 @@ require 'spec_helper'
 
 describe Pessoa do
   it "deveria ser possivel criar uma nova pessoa" do
+    pending
     nome = "Jose"
     sobrenome = "da Silva"
     pessoa = Pessoa.new(nome: nome, sobrenome: sobrenome)
@@ -10,6 +11,7 @@ describe Pessoa do
   end
 
   it "deveria obter o nome completo da pessoa" do
+    pending
     pessoa = cria_pessoa
     expect(pessoa.nome_completo).to eq "#{pessoa.nome} #{pessoa.sobrenome}"
   end
