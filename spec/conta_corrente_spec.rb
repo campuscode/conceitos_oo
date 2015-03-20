@@ -2,6 +2,7 @@ require 'spec_helper'
 
 describe ContaCorrente do
   it "deveria cobrar taxa de R$0,10 no deposito" do
+    pending
     conta = conta_corrente
     saldo_anterior = conta.saldo
     valor_deposito = 200
@@ -11,6 +12,7 @@ describe ContaCorrente do
   end
 
   it "deveria não gerar juros quando atualizada" do
+    pending
     conta = conta_corrente
     saldo_anterior = conta.saldo
     conta.atualizar

@@ -14,6 +14,7 @@ describe Conta do
   end
 
   it "deveria ter um novo saldo quando houver um saque" do
+    pending
     conta = cria_conta
     saldo_anterior = conta.saldo
     saque = 200
@@ -22,6 +23,7 @@ describe Conta do
   end
 
   it "deveria ter um novo saldo depois de um deposito" do
+    pending
     conta = cria_conta
     saldo_anterior = conta.saldo
     deposito = 500
@@ -30,12 +32,14 @@ describe Conta do
   end
 
   it "deveria retorna false quando não for possível sacar" do
+    pending
     conta = cria_conta
     saque = 2000
     expect(conta.sacar(saque)).to eq false
   end
 
   it "deveria deixar a conta negativa quando o saque usar o limite" do
+    pending
     conta = cria_conta
     saque = 1500
     saldo_anterior = conta.saldo
@@ -44,6 +48,7 @@ describe Conta do
   end
 
   it "deveria mostrar que a conta está usando limite" do
+    pending
     conta = cria_conta
     saque = 1500
     saldo_anterior = conta.saldo
@@ -52,12 +57,14 @@ describe Conta do
   end
 
   it "duas contas com mesmos dados deveriam ser iguais" do
+    pending
     conta1 = cria_conta
     conta2 = cria_conta
     expect(conta1).to eq conta2
   end
 
   it "deveria ter novo saldo após tranferencia" do
+    pending
     conta_origem = cria_conta
     saldo_anterior_origem = conta_origem.saldo
     conta_destino = cria_conta("3432-2", "Zenildo Bispo", 4000.54)
@@ -69,6 +76,7 @@ describe Conta do
   end
 
   it "deveria ser false quando não for possivel transferir" do
+    pending
     conta_origem = cria_conta
     conta_destino = cria_conta("3432-2", "Zenildo Bispo", 4000.54)
     valor_transferencia = 1560.40
