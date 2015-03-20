@@ -5,7 +5,8 @@ describe ProcessadorAtualizacao do
     contas = cria_contas
     saldos_anteriores = contas.map(&:saldo)
     taxa = 0.006
-    contas.maps{ |conta| conta.atualizar(taxa) }
+    processador = ProcessadorAtualizacao.new(contas)
+    processador.processar_atualizacao
     contas.each_index do |i|
       if contas[i].is_a? ContaCorrente
         expect(contas[i].salda).to eq(saldos_anteriores[i])
