@@ -4,7 +4,7 @@ describe Cliente do
   it "deveria ser possivel criar uma pessoa" do
     pending
     nome = "Jose"
-    sobrenome "da Silva"
+    sobrenome = "da Silva"
     cpf = "111.111.111-00"
     cliente = Cliente.new(nome: nome, sobrenome: sobrenome, cpf: cpf)
     expect(cliente.nome).to eq nome
